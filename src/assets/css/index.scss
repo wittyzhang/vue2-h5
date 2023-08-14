@@ -1,0 +1,121 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+html,
+body .app {
+  color: #333333;
+  font-family: Arial, Helvetica, 'STHeiti STXihei', 'Microsoft YaHei', Tohoma, sans-serif;
+  background-color: $background-color;
+}
+.mt10{ margin-top: 20px; }
+.phone-button{
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 11.733333vw;
+  margin: 0;
+  padding: 0;
+  font-size: 4.266667vw;
+  line-height: 11.733333vw;
+  text-align: center;
+  border-radius: 0.533333vw;
+  cursor: pointer;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  vertical-align: bottom;
+  border: 0.2vw solid $primary-color;
+  background: #ffffff;
+  color: $primary-color;
+  padding: 0 4vw;
+  border-radius: $border-radius;
+  &.green {
+    border: 0.2vw solid $green-color;
+    color: $green-color;
+  }
+  &.purple{
+    border: 0.2vw solid $purple-color;
+    color: $purple-color;
+  }
+}
+.round-btns {
+  position: absolute;
+  right: 20px;
+  bottom: 13vw;
+  a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+    border: 1px solid $primary-color;
+    font-size: 24px;
+    color: $primary-color;
+    margin-left: 10px;
+    cursor: pointer;
+    img{
+      width: 100%;
+      vertical-align: bottom;
+    }
+    &.green {
+      border-color: $green-color;
+      color: $green-color;
+    }
+    &.yellow {
+      border-color: $yellow-color;
+      color: $yellow-color;
+    }
+    &.blue {
+      border-color: $blue-color;
+      color: $blue-color;
+    }
+    &.purple{
+      border: 0.2vw solid $purple-color;
+      color: $purple-color;
+    }
+  }
+}
+.app-container {
+  // padding-bottom: 44px;
+}
+:root:root {
+  --van-button-primary-background: #D4633B;
+  --van-button-primary-color: #ffffff;
+}
+// .van-button{ border-radius: $border-radius !important; }
+.van-button--primary {
+  color: var(--van-button-primary-color);
+  background-color: var(--van-button-primary-background);
+  border-color: var(--van-button-primary-background);
+}
+.van-button--plain {
+  background-color: #fff;
+}
+.van-button--plain.van-button--primary{
+  color: var(--van-button-primary-background)
+}
+.van-nav-bar{
+  background-color: $primary-color;
+  .van-nav-bar__text,
+  .van-nav-bar__title,
+  .van-icon{
+    color: #fff;
+  }
+}
+.van-tabs__line{
+  bottom: 5vw;
+}
+// 文字颜色
+.pink { color: $pink-color; }
+.yellow { color: $yellow-color; }
+.red { color: $red-color; }
+.blue { color: $blue-color; }
+.purple { color: $purple-color; }
+.brown { color: $brown-color; }
+.green { color: $green-color; }
+.gray{ color: $gray-color; }
+
+
+.warpper .van-field__label{
+  width: 0;
+}

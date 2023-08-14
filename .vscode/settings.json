@@ -1,0 +1,10 @@
+{
+  "cSpell.words": [
+    "amfe",
+    "vant",
+    "vuex"
+  ],
+  "i18n-ally.localesPaths": [
+    "src/locales"
+  ]
+}
